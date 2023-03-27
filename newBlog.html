@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRITE A NEW BLOG</title>
+    <style>
+        #author{
+            margin:10x;
+            border:solid black 1px;
+            padding:10px;
+           
+        }
+        #content{
+            margin:10px;
+            border:solid black 1px;
+            padding:20px;
+        }
+        body{
+            background-image: URL(OIG2.jpeg);
+
+
+           
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+        }
+
+        #namebox{
+           
+            margin:7px;
+            opacity:0.5;
+            border-radius: 8px;
+            padding:4px;
+            height:23px;
+            width:27%;
+        }
+        body{
+            margin:100px;
+        }
+        form{
+            padding:20px;
+        }
+        h2.contenthead{
+            color:burlywood;
+        }
+        h2.authorname{
+            color:burlywood;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <div id="author">
+        <h2 class="authorname">blogger's name</h2>
+       <!--<label  for="name" style= "color:burlywood; font-weight: bold; ">blogger's name</label>-->
+       <input  id="namebox" type="text" id="name" name="name" placeholder="xyz"><br>
+       </div>
+       <h2 class="contenthead">write your content here</h2>
+       <div id="content">
+       <label  for="content">tell us what you think about. BlogIT</label>
+<br>
+
+       <textarea id="content" name="content" rows="4" cols="50">
+        Enter text here...
+       </textarea>
+       </div>
+       <input type="submit" value="submit">
+</form>
+<script src="ckeditor_4.21.0_basic/ckeditor/ckeditor.js"></script>
+<script>CKEDITOR.replace('content');</script>
+</body>
