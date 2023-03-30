@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRITE A NEW BLOG</title>
+    <style>
+        #author{
+            margin:10x;
+            border:solid black 1px;
+            padding:10px;
+           
+        }
+        #content{
+            margin:10px;
+            border:solid black 1px;
+            padding:20px;
+        }
+        body{
+            background-image: URL("bg4.jpg");
+
+
+           
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+        }
+
+        #namebox{
+           
+            margin:7px;
+            opacity:1.0;
+            border-radius: 8px;
+            padding:4px;
+            height:23px;
+            width:50%;
+        }
+        body{
+            margin: 50px;
+        }
+        form{
+            padding: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h2.contenthead{
+            color:rgb(59, 35, 3);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h2.authorname{
+            color:rgb(59, 35, 3);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        input[type="submit"]:hover{
+           border:5px solid grey;
+           border: 3px;
+           margin:4px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <div id="author">
+        <h2 class="authorname">BLOGGER'S NAME</h2>
+       <!--<label  for="name" style= "color:burlywood; font-weight: bold; ">blogger's name</label>-->
+       <input  id="namebox" type="text" id="name" name="name" placeholder="Adityam"><br>
+       </div>
+       <h2 class="contenthead">ENTER YOUR CONTENT</h2>
+       <div id="content">
+       <label  for="content">BlogIT :)</label>
+<br>
+
+       <textarea id="content" name="content" rows="100" cols="100">
+        ENTER TEXT HERE...
+       </textarea>
+       </div>
+       <input id="submit" type="submit" value="Submit">
+</form>
+<script src="ckeditor/ckeditor.js"></script>
+<script>CKEDITOR.replace('content');</script>
+</body>
